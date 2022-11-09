@@ -35,41 +35,42 @@ script = ExtResource("2_jo5su")
 card = ExtResource("1_qt7o2")
 
 [node name="Cards" type="HBoxContainer" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
 alignment = 1
 
 [node name="Card" parent="Cards" instance=ExtResource("1_qt7o2")]
 layout_mode = 2
-offset_left = 12.0
-offset_right = 12.0
-offset_bottom = 40.0
+offset_left = 232.0
+offset_right = 232.0
+offset_bottom = 0.0
 card_texture = ExtResource("3_tcjck")
 
 [node name="Card2" parent="Cards" instance=ExtResource("1_qt7o2")]
 layout_mode = 2
-offset_left = 16.0
-offset_right = 16.0
-offset_bottom = 40.0
+offset_left = 236.0
+offset_right = 236.0
+offset_bottom = 0.0
 card_texture = ExtResource("4_wjl6b")
 
 [node name="Card3" parent="Cards" instance=ExtResource("1_qt7o2")]
 layout_mode = 2
-offset_left = 20.0
-offset_right = 20.0
-offset_bottom = 40.0
+offset_left = 240.0
+offset_right = 240.0
+offset_bottom = 0.0
 card_texture = ExtResource("5_yqj2h")
 
 [node name="Card4" parent="Cards" instance=ExtResource("1_qt7o2")]
 layout_mode = 2
-offset_left = 24.0
-offset_right = 24.0
-offset_bottom = 40.0
+offset_left = 244.0
+offset_right = 244.0
+offset_bottom = 0.0
 card_texture = ExtResource("6_pdnfn")
 
 [node name="Card5" parent="Cards" instance=ExtResource("1_qt7o2")]
 layout_mode = 2
-offset_left = 28.0
-offset_right = 28.0
-offset_bottom = 40.0
+offset_left = 248.0
+offset_right = 248.0
+offset_bottom = 0.0
 card_texture = ExtResource("7_58ity")
