@@ -1,0 +1,76 @@
+[gd_scene load_steps=8 format=3 uid="uid://b1hailaj3ab0b"]
+
+[ext_resource type="PackedScene" uid="uid://c17r8bfgfkri5" path="res://card.tscn" id="1_qt7o2"]
+[ext_resource type="Script" path="res://DropZone.gd" id="2_jo5su"]
+[ext_resource type="Texture2D" uid="uid://bhcwrqe8xb3kn" path="res://playing-cards-pack/PNG/Cards (large)/card_clubs_02.png" id="3_tcjck"]
+[ext_resource type="Texture2D" uid="uid://hvpy5y4pc8n2" path="res://playing-cards-pack/PNG/Cards (large)/card_clubs_03.png" id="4_wjl6b"]
+[ext_resource type="Texture2D" uid="uid://b05ihy87ext0w" path="res://playing-cards-pack/PNG/Cards (large)/card_clubs_04.png" id="5_yqj2h"]
+[ext_resource type="Texture2D" uid="uid://drwrfwgte6xyy" path="res://playing-cards-pack/PNG/Cards (large)/card_clubs_05.png" id="6_pdnfn"]
+[ext_resource type="Texture2D" uid="uid://cvph88ky16pkl" path="res://playing-cards-pack/PNG/Cards (large)/card_clubs_06.png" id="7_58ity"]
+
+[node name="Example" type="Node"]
+
+[node name="BackgroundDropZone" type="ColorRect" parent="."]
+custom_minimum_size = Vector2i(0, 62)
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+color = Color(0.0117647, 1, 0.145098, 1)
+
+[node name="DropZone" type="HBoxContainer" parent="BackgroundDropZone"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+alignment = 1
+script = ExtResource("2_jo5su")
+card = ExtResource("1_qt7o2")
+
+[node name="Cards" type="HBoxContainer" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+alignment = 1
+
+[node name="Card" parent="Cards" instance=ExtResource("1_qt7o2")]
+layout_mode = 2
+offset_left = 232.0
+offset_right = 232.0
+offset_bottom = 0.0
+card_texture = ExtResource("3_tcjck")
+
+[node name="Card2" parent="Cards" instance=ExtResource("1_qt7o2")]
+layout_mode = 2
+offset_left = 236.0
+offset_right = 236.0
+offset_bottom = 0.0
+card_texture = ExtResource("4_wjl6b")
+
+[node name="Card3" parent="Cards" instance=ExtResource("1_qt7o2")]
+layout_mode = 2
+offset_left = 240.0
+offset_right = 240.0
+offset_bottom = 0.0
+card_texture = ExtResource("5_yqj2h")
+
+[node name="Card4" parent="Cards" instance=ExtResource("1_qt7o2")]
+layout_mode = 2
+offset_left = 244.0
+offset_right = 244.0
+offset_bottom = 0.0
+card_texture = ExtResource("6_pdnfn")
+
+[node name="Card5" parent="Cards" instance=ExtResource("1_qt7o2")]
+layout_mode = 2
+offset_left = 248.0
+offset_right = 248.0
+offset_bottom = 0.0
+card_texture = ExtResource("7_58ity")

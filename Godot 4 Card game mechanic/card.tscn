@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://c17r8bfgfkri5"]
+
+[ext_resource type="Script" path="res://card.gd" id="2_oq745"]
+
+[node name="Card" type="TextureRect"]
+offset_right = 40.0
+offset_bottom = 62.0
+script = ExtResource("2_oq745")
