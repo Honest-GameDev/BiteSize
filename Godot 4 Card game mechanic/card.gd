@@ -5,7 +5,7 @@ var id
 
 func _ready():
 	CardActions.connect("card_played", was_i_played)
-	id = RandomNumberGenerator.new()
+	id = randi() % 999999
 	texture = card_texture
 	
 func _get_drag_data(_at_position):
